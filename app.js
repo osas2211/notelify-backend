@@ -14,7 +14,7 @@ const http = require("http")
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://master.d38cfclh6fsxhs.amplifyapp.com/",
+    origin: "*",
   },
 })
 
